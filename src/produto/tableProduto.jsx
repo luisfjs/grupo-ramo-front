@@ -1,28 +1,31 @@
 import React from 'react'
-import { Table, Button, Icon, TableCell } from 'semantic-ui-react'
+import { Table, Button, Icon, TableCell, Divider } from 'semantic-ui-react'
 import FiltroProduto from './filtroProduto';
 import {Pagination} from 'semantic-ui-react'
 
 export default props => {
-    console.log(props)
-    const rows = props.lista.map(produto => (
+    
+    const indexStart = (props.paginacao.activePage - 1) * 10
+    const indexEnd = indexStart + 10
+    const listaPaginada = props.lista.slice(indexStart, indexEnd)
+    const rows = listaPaginada.map(produto => (
         <Table.Row textAlign='center' key={produto.nrGrupoRamo} >
-            <Table.Cell>{produto.nrGrupoRamo}</Table.Cell>
-            <Table.Cell>{produto.nmGrupoRamo}</Table.Cell>
-            <Table.Cell>{produto.dataIniVigencia}</Table.Cell>
-            <Table.Cell>{produto.dataFimVigencia}</Table.Cell>
-            <Table.Cell>
+            <Table.Cell collapsing>{produto.nrGrupoRamo}</Table.Cell>
+            <Table.Cell collapsing>{produto.nmGrupoRamo}</Table.Cell>
+            <Table.Cell collapsing>{produto.dataIniVigencia}</Table.Cell>
+            <Table.Cell collapsing>{produto.dataFimVigencia}</Table.Cell>
+            <Table.Cell collapsing>
                 <Button.Group>
-                    <Button animated onClick={() => props.handleEdit(produto.nrGrupoRamo)}>
+                    <Button size='small' animated onClick={() => props.handleEdit(produto.nrGrupoRamo)}>
                         <Button.Content hidden>Editar</Button.Content>
                         <Button.Content visible>
-                            <Icon name='pencil' />
+                            <Icon name='edit' color='yellow' />
                         </Button.Content>
                     </Button>
-                    <Button animated onClick={() => props.handleDelete(produto.nrGrupoRamo)}>
-                        <Button.Content hidden>Excluir</Button.Content>
+                    <Button size='small' animated onClick={() => props.handleDelete(produto.nrGrupoRamo)}>
+                        <Button.Content hidden color='red'>Excluir</Button.Content>
                         <Button.Content visible>
-                            <Icon name='trash' />
+                            <Icon name='trash' color='red' />
                         </Button.Content>
                     </Button>
                 </Button.Group>
@@ -49,15 +52,14 @@ export default props => {
                 <Table.Body>
                     {rows}
                 </Table.Body>
-
-                <Table.Footer>
+                <Table.Footer fullWidth>
                     <Table.Row textAlign='right'>
-                    <TableCell collspan='5'>
-                        <Pagination
-                            activePage={props.paginacao.activePage}
-                            onPageChange={props.handlePaginationChange}
-                            totalPages={props.lista / 10} /> 
-                    </TableCell>
+                        <Table.HeaderCell colSpan='5'>
+                            <Pagination
+                                activePage={props.paginacao.activePage}
+                                onPageChange={props.handlePaginationChange}
+                                totalPages={props.paginacao.totalPages} /> 
+                        </Table.HeaderCell>
                     </Table.Row>
                 </Table.Footer>
             </Table>

@@ -25,7 +25,9 @@ export default props => {
                     placeholder='Data Inicio' 
                     name="dataIniVigencia"
                     width={8} value={props.produto.dataIniVigencia} 
-                    onChange={props.handleChange}/>
+                    onChange={props.handleChange}
+                    readOnly={props.editar}
+                    disabled={props.editar} />
         <Form.Input label='Data Fim' 
                     placeholder='Data Fim'
                     name="dataFimVigencia"
@@ -33,9 +35,9 @@ export default props => {
                     onChange={props.handleChange}/>
       </Form.Group>
       <Button.Group>
-        <Form.Button type='submit' width={6}>Gravar</Form.Button>
-        
-        <Form.Button type='Button' width={6} onClick={props.handleCancelar}>Cancelar</Form.Button>
+        <Form.Button type='submit' width={8}>Gravar</Form.Button>
+
+        <Form.Button type='Button' width={8} onClick={props.handleCancelar}>Cancelar</Form.Button>
       </Button.Group>
       
     </Form>

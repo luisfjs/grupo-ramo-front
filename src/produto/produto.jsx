@@ -30,8 +30,6 @@ export default class Produto extends Component {
 
   componentDidMount() {
     this.loadList();
-    let totalPages = this.state.filtrados.length / tamanhoPagina
-    this.setState({paginacao: {totalPages: totalPages}})
   }
 
   handleChange = (e, { name, value }) => this.setState({produto:{...this.state.produto, [name]: value }})
@@ -83,14 +81,16 @@ export default class Produto extends Component {
       dataFimVigencia: ''
     }})
 
-  handlePaginationChange = () => {
-    this.setState({paginacao: {activePage: this.state.paginacao.activePage + 1}})
+  handlePaginationChange = (e, { activePage }) => {
+    this.setState({paginacao: {...this.state.paginacao, activePage}})
   }
 
   loadList = async () => {
     let url = "/produto/lista/gruporamo"
     const  {data}  = await api.get(url)
-    this.setState({ produtos: data.dados, filtrados: data.dados })
+    let produtos = data.dados
+    let totalPages = produtos.length / tamanhoPagina
+    this.setState({ produtos, filtrados: produtos, paginacao: {...this.state.paginacao, totalPages} })
   }
 
   filtar = (filtro) => {
