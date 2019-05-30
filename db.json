@@ -1,0 +1,53 @@
+{
+  "produto": [
+    {
+      "id": 1,
+      "codigo": 1,
+      "descricao": "Descriçao 1",
+      "dataInicio": "10/1/2015",
+      "dataFim": "10/1/2018"
+    },
+    {
+      "id": 2,
+      "codigo": 2,
+      "descricao": "Descriçao 2",
+      "dataInicio": "10/1/2015",
+      "dataFim": "10/1/2018"
+    },
+    {
+      "id": 3,
+      "codigo": 3,
+      "descricao": "Descriçao 3",
+      "dataInicio": "10/1/2015",
+      "dataFim": "10/1/2018"
+    },
+    {
+      "id": 4,
+      "codigo": 4,
+      "descricao": "Descriçao 4",
+      "dataInicio": "10/1/2015",
+      "dataFim": "10/1/2018"
+    },
+    {
+      "id": 5,
+      "codigo": 5,
+      "descricao": "Descriçao 5",
+      "dataInicio": "10/1/2015",
+      "dataFim": "10/1/2018"
+    },
+    {
+      "codigo": "3213213",
+      "descricao": "sfdsfsfsdfsd",
+      "dataInicio": "fdsfsfsfsdf",
+      "dataFim": "fdsfsdfsdfsdfsd",
+      "id": 6
+    },
+    {
+      "codigo": "01",
+      "descricao": "dsdadasdasdasd",
+      "dataInicio": "sadadadasdsadsad",
+      "dataFim": "dsdsadsadasdadasdsa",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+    "timeStamp": "2019-05-29T12:13:16.559",
+    "status": "Operação realizada com sucesso.",
+    "dados": [
+        {
+            "nmGrupoRamo": "Patrimonial - Assist?cia - Bens em Geral",
+            "nrGrupoRamo": "0112",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Compreensivo Residencial",
+            "nrGrupoRamo": "0114",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Compreensivo Condom?nio",
+            "nrGrupoRamo": "0116",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Compreensivo Empresarial",
+            "nrGrupoRamo": "0118",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Lucros Cessantes",
+            "nrGrupoRamo": "0141",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Riscos de Engenharia",
+            "nrGrupoRamo": "0167",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Riscos Diversos",
+            "nrGrupoRamo": "0171",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Global de Bancos",
+            "nrGrupoRamo": "0173",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Garantia Estendida ? Bens em Geral",
+            "nrGrupoRamo": "0195",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Patrimonial - Riscos Nomeados e Operacionais",
+            "nrGrupoRamo": "0196",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Responsabilidades - Responsabilidade Civil de Administradores e Diretores ? D&O",
+            "nrGrupoRamo": "0310",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Responsabilidades - Responsabilidade Civil Riscos Ambientais",
+            "nrGrupoRamo": "0313",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Responsabilidades - Responsabilidade Civil Geral",
+            "nrGrupoRamo": "0351",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Responsabilidades - Responsabilidade Civil Profissional",
+            "nrGrupoRamo": "0378",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Autom?vel - Acidentes Pessoais de Passageiros ? APP",
+            "nrGrupoRamo": "0520",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Autom?vel - Garantia Estendida ? Auto",
+            "nrGrupoRamo": "0524",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Autom?vel - Carta Verde",
+            "nrGrupoRamo": "0525",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Autom?vel - Seguro Auto Popular",
+            "nrGrupoRamo": "0526",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Autom?vel - Autom?vel ? Casco",
+            "nrGrupoRamo": "0531",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Autom?vel - Assist?ncia e Outras Coberturas ? Auto",
+            "nrGrupoRamo": "0542",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Autom?vel - Responsabilidade Civil Facultativa Ve?culos ? RCFV",
+            "nrGrupoRamo": "0553",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Autom?vel - DPVAT",
+            "nrGrupoRamo": "0588",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Transporte Nacional",
+            "nrGrupoRamo": "0621",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Transporte Internacional",
+            "nrGrupoRamo": "0622",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Transportador Rodovi?rio Interestadual e Internacional ? RC ?nibus",
+            "nrGrupoRamo": "0623",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil Facultativa de Ve?culos ? RCFV ?nibus",
+            "nrGrupoRamo": "0628",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Transportador Rodovi?rio de Carga em Viagem Internacional ? RCTR-VI-C",
+            "nrGrupoRamo": "0632",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Transportador Ferrovi?rio Carga ? RCTF-C",
+            "nrGrupoRamo": "0638",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Transportador Rodovi?rio em Viagem Internacional Pessoas Transportadas ou n?o ? Carta Azul",
+            "nrGrupoRamo": "0644",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Transportador A?reo Carga ? RCTA-C",
+            "nrGrupoRamo": "0652",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Transportador Rodovi?rio Carga ? RCTR-C",
+            "nrGrupoRamo": "0654",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Operador do Transporte Multimodal ? RCOTM-C",
+            "nrGrupoRamo": "0658",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Transportador Desvio De Carga ? RCF-DC",
+            "nrGrupoRamo": "0655",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Transportes - Responsabilidade Civil do Transportador Aquavi?rio Carga ? RCA-C",
+            "nrGrupoRamo": "0656",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Riscos Financeiros - Riscos Diversos ? Financeiros",
+            "nrGrupoRamo": "0711",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Riscos Financeiros - Fian?a Locat?cia",
+            "nrGrupoRamo": "0746",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Riscos Financeiros - Cr?dito Interno",
+            "nrGrupoRamo": "0748",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Riscos Financeiros - Cr?dito ? Exporta??o",
+            "nrGrupoRamo": "0749",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Riscos Financeiros - Garantia Segurado ? Setor P?blico",
+            "nrGrupoRamo": "0775",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Riscos Financeiros - Garantia Segurado ? Setor Privado",
+            "nrGrupoRamo": "0776",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Funeral",
+            "nrGrupoRamo": "0929",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Perda do Certificado de Habilita??o de V?o ? PCHV",
+            "nrGrupoRamo": "0936",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Viagem",
+            "nrGrupoRamo": "0969",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Prestamista (Exceto Habitacional e Rural)",
+            "nrGrupoRamo": "0977",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Educacional",
+            "nrGrupoRamo": "0980",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Acidentes Pessoais",
+            "nrGrupoRamo": "0982",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Dotal Misto",
+            "nrGrupoRamo": "0983",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Doen?as Graves ou Doen?a Terminal",
+            "nrGrupoRamo": "0984",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Dotal Puro",
+            "nrGrupoRamo": "0986",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Desemprego/Perda de Renda",
+            "nrGrupoRamo": "0987",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Eventos Aleat?rios",
+            "nrGrupoRamo": "0990",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - Vida",
+            "nrGrupoRamo": "0993",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Coletivo - VGBL/VAGP/VRGP/VRSA/VRI",
+            "nrGrupoRamo": "0994",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Habitacional - Seguro Habitacional em Ap?lices de Mercado ? Prestamista",
+            "nrGrupoRamo": "1061",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Habitacional - Seguro Habitacional em Ap?lices de Mercado ? Demais Coberturas",
+            "nrGrupoRamo": "1065",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Habitacional - Seguro Habitacional do Sistema Financeiro da Habita??o",
+            "nrGrupoRamo": "1066",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Agr?cola sem Cobertura do FESR",
+            "nrGrupoRamo": "1101",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Agr?cola com Cobertura do FESR",
+            "nrGrupoRamo": "1102",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Pecu?rio sem Cobertura do FESR",
+            "nrGrupoRamo": "1103",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Pecu?rio com Cobertura do FESR",
+            "nrGrupoRamo": "1104",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Aqu?cola sem Cobertura do FESR",
+            "nrGrupoRamo": "1105",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Aqu?cola com Cobertura do FESR",
+            "nrGrupoRamo": "1106",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Florestas sem Cobertura do FESR",
+            "nrGrupoRamo": "1107",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Florestas com Cobertura do FESR",
+            "nrGrupoRamo": "1108",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro da C?dula do Rural",
+            "nrGrupoRamo": "1109",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro Benfeitorias e Produtos Agropecu?rios",
+            "nrGrupoRamo": "1130",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Penhor Rural",
+            "nrGrupoRamo": "1162",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguros Animais",
+            "nrGrupoRamo": "1164",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Rural - Seguro de Vida do Produtor Rural",
+            "nrGrupoRamo": "1198",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Funeral",
+            "nrGrupoRamo": "1329",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Perda do Certificado de Habilita??o de V?o ? PCHV",
+            "nrGrupoRamo": "1336",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Viagem",
+            "nrGrupoRamo": "1369",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Prestamista (Exceto Habitacional e Rural)",
+            "nrGrupoRamo": "1377",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Educacional",
+            "nrGrupoRamo": "1380",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Acidentes Pessoais",
+            "nrGrupoRamo": "1381",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Dotal Misto",
+            "nrGrupoRamo": "1383",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Doen?as Graves ou Doen?a Terminal",
+            "nrGrupoRamo": "1384",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Dotal Puro",
+            "nrGrupoRamo": "1386",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Desemprego/Perda de Renda",
+            "nrGrupoRamo": "1387",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Eventos Aleat?rios",
+            "nrGrupoRamo": "1390",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - Vida",
+            "nrGrupoRamo": "1391",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Pessoas Individual - VGBL/VAGP/VRGP/VRSA/VRI",
+            "nrGrupoRamo": "1392",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Mar?timos - Seguro Compreensivo para Operadores Portu?rios",
+            "nrGrupoRamo": "1417",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Mar?timos - Responsabilidade Civil Facultativa para Embarca??es ? RCF",
+            "nrGrupoRamo": "1428",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Mar?timos - Mar?timos (Casco)",
+            "nrGrupoRamo": "1433",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Mar?timos - DPEM",
+            "nrGrupoRamo": "1457",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Aeron?uticos - Responsabilidade Civil Facultativa para Aeronaves ? RCF",
+            "nrGrupoRamo": "1528",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Aeron?uticos - Aeron?uticos (Casco)",
+            "nrGrupoRamo": "1535",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Aeron?uticos - Responsabilidade Civil Hangar",
+            "nrGrupoRamo": "1537",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Aeron?uticos - Responsabilidade do Explorador ou Transportador A?reo ? RETA",
+            "nrGrupoRamo": "1597",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Aeron?uticos - Sat?lites",
+            "nrGrupoRamo": "1574",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Microsseguros - Pessoas",
+            "nrGrupoRamo": "1601",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Microsseguros - Danos",
+            "nrGrupoRamo": "1602",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Microsseguros - Previd?ncia",
+            "nrGrupoRamo": "1603",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Sucursais no Exterior  - Sucursais no Exterior",
+            "nrGrupoRamo": "2199",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Petr?leo - Riscos de Petr?leo",
+            "nrGrupoRamo": "1734",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Nucleares - Riscos Nucleares",
+            "nrGrupoRamo": "1872",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Sa?de - Sa?de ? Ressegurador Local",
+            "nrGrupoRamo": "1985",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        },
+        {
+            "nmGrupoRamo": "Aceita??es do Exterior - Aceita??es do Exterior",
+            "nrGrupoRamo": "2079",
+            "dataIniVigencia": "2019-05-23",
+            "dataFimVigencia": null
+        }
+    ]
+}
