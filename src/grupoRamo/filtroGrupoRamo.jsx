@@ -6,7 +6,7 @@ export default props => {
         {
             "key": "codigo",
             "text": "Código",
-            "value": "nrGrupoRamo",
+            "value": "nrGrupoRamo"
         },
         {
             "key": "descricao",
@@ -28,7 +28,8 @@ export default props => {
         <Form.Group>
             <Form.Select placeholder='Campo' 
                          options={options} width={6}
-                         onChange={props.handleChangeCampo} />
+                         onChange={props.handleChangeCampo}
+                         defaultValue={options[0].value} />
             <Form.Input 
                 placeholder='Filtro'  
                 name="filtro"

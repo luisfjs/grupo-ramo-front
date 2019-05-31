@@ -15,11 +15,11 @@ export default class GrupoRamo extends Component {
     open: false,
     editar: false,
     filtro: "",
-    campo: "",
+    campo: "nrGrupoRamo",
     produtos: [],
     filtrados: [],
     produto: {
-      nrGrupoRamo: 0,
+      nrGrupoRamo: '',
       nmGrupoRamo: '',
       dataIniVigencia: '',
       dataFimVigencia: ''
@@ -36,7 +36,8 @@ export default class GrupoRamo extends Component {
     this.loadList();
   }
 
-  handleChange = (e, { name, value }) => this.setState({produto:{...this.state.produto, [name]: value }})
+  handleChange = (e, { name, value }) => 
+                            this.setState({produto:{...this.state.produto, [name]: value }})
   
   handleSubmit = () => {
     const method = this.state.editar ? 'put' : 'post'
@@ -89,7 +90,7 @@ export default class GrupoRamo extends Component {
   handleChangeCampo = (e, {value}) => this.setState({campo: value})
 
   handleCancelar = () => this.setState({editar: false, produto: {
-      nrGrupoRamo: 0,
+      nrGrupoRamo: '',
       nmGrupoRamo: '',
       dataIniVigencia: '',
       dataFimVigencia: ''
@@ -104,15 +105,21 @@ export default class GrupoRamo extends Component {
     const  {data}  = await api.get(url)
     let produtos = data.dados
     let totalPages = Math.round(produtos.length / tamanhoPagina)
+    totalPages = produtos.length % tamanhoPagina === 0 ? totalPages : totalPages + 1
     this.setState({ produtos, filtrados: produtos, paginacao: {...this.state.paginacao, totalPages} })
   }
 
   filtar = (filtro) => {
-    const listaFiltrada = this.state.produtos.filter((produto) => produto[this.state.campo].includes(filtro))
-    this.setState({filtrados: listaFiltrada})
+    const listaFiltrada = this.state.produtos.filter((produto) => 
+                                              produto[this.state.campo].includes(filtro))
+
+    let totalPages = Math.round(listaFiltrada.length / tamanhoPagina)
+    console.log(listaFiltrada)
+    this.setState({filtrados: listaFiltrada, paginacao: {activePage: 1, totalPages} })
   }
 
   render() {
+    console.log(this.state.filtrados)
     return (
       <React.Fragment>
           <Header as="h1" block textAlign="center" color="yellow">
