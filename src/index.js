@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Produto from './produto/produto';
+import Produto from './grupoRamo/grupoRamo';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Produto />, document.getElementById('root'));

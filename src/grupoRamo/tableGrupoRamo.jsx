@@ -1,7 +1,6 @@
 import React from 'react'
-import { Table, Button, Icon, TableCell, Divider } from 'semantic-ui-react'
-import FiltroProduto from './filtroProduto';
-import {Pagination} from 'semantic-ui-react'
+import { Table, Button, Icon, Pagination } from 'semantic-ui-react'
+import FiltroProduto from './filtroGrupoRamo';
 
 export default props => {
     
@@ -13,7 +12,7 @@ export default props => {
             <Table.Cell collapsing>{produto.nrGrupoRamo}</Table.Cell>
             <Table.Cell collapsing>{produto.nmGrupoRamo}</Table.Cell>
             <Table.Cell collapsing>{produto.dataIniVigencia}</Table.Cell>
-            <Table.Cell collapsing>{produto.dataFimVigencia}</Table.Cell>
+            <Table.Cell collapsing>{produto.dataFimVigencia === null ? "--/--/----" : produto.dataFimVigencia}</Table.Cell>
             <Table.Cell collapsing>
                 <Button.Group>
                     <Button size='small' animated onClick={() => props.handleEdit(produto.nrGrupoRamo)}>
@@ -22,7 +21,7 @@ export default props => {
                             <Icon name='edit' color='yellow' />
                         </Button.Content>
                     </Button>
-                    <Button size='small' animated onClick={() => props.handleDelete(produto.nrGrupoRamo)}>
+                    <Button size='small' animated onClick={() => props.handleDelete(produto)}>
                         <Button.Content hidden color='red'>Excluir</Button.Content>
                         <Button.Content visible>
                             <Icon name='trash' color='red' />
@@ -32,20 +31,21 @@ export default props => {
             </Table.Cell>
         </Table.Row>
     ))
-
+    
     return (
         <div>
             <FiltroProduto
                 handleChangeFiltro={props.handleChangeFiltro}
                 handleChangeCampo={props.handleChangeCampo} />
-            <Table striped selectable>
+             
+            <Table striped selectable compact fixed>
                 <Table.Header>
                     <Table.Row textAlign='center'>
-                        <Table.HeaderCell>Código</Table.HeaderCell>
-                        <Table.HeaderCell>Descrição</Table.HeaderCell>
-                        <Table.HeaderCell>Data Inicio</Table.HeaderCell>
-                        <Table.HeaderCell>Data Fim</Table.HeaderCell>
-                        <Table.HeaderCell>Ações</Table.HeaderCell>
+                        <Table.HeaderCell width={2}>Código</Table.HeaderCell>
+                        <Table.HeaderCell width={8}>Descrição</Table.HeaderCell>
+                        <Table.HeaderCell width={2}>Data Inicio</Table.HeaderCell>
+                        <Table.HeaderCell width={2}>Data Fim</Table.HeaderCell>
+                        <Table.HeaderCell width={2}>Ações</Table.HeaderCell>
                     </Table.Row>
                 </Table.Header>
 

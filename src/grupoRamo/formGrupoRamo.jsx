@@ -35,11 +35,10 @@ export default props => {
                     onChange={props.handleChange}/>
       </Form.Group>
       <Button.Group>
-        <Form.Button type='submit' width={8}>Gravar</Form.Button>
-
-        <Form.Button type='Button' width={8} onClick={props.handleCancelar}>Cancelar</Form.Button>
+        <Button positive>Gravar</Button>
+        <Button.Or />
+        <Button onClick={props.handleCancelar}>Cancelar</Button>
       </Button.Group>
-      
     </Form>
   )
 }

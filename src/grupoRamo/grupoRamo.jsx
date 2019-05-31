@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import FormProduto from './formProduto';
-import TableProduto from './tableProduto';
-import { Container, Divider } from 'semantic-ui-react'
+import FormGrupoRamo from './formGrupoRamo';
+import TableGrupoRamo from './tableGrupoRamo';
+import { Container, Divider, Header, Confirm} from 'semantic-ui-react'
 import api from '../services/api';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,8 +9,10 @@ import 'semantic-ui-css/semantic.min.css'
 
 const tamanhoPagina = 10
 
-export default class Produto extends Component {
+export default class GrupoRamo extends Component {
+  
   state = {
+    open: false,
     editar: false,
     filtro: "",
     campo: "",
@@ -28,6 +30,8 @@ export default class Produto extends Component {
     }
   }
 
+  deletarProduto = {}
+
   componentDidMount() {
     this.loadList();
   }
@@ -43,21 +47,31 @@ export default class Produto extends Component {
             this.setState({editar: false})
         })
         .catch(e => {
-            toast.error(`Erro ao salvar produto!`)
-            this.setState({editar: false})
+            let msg = ""
+            if(e.response.status === 304){
+              msg = "Verifique a data inserida!"
+            } else if(e.response.status === 400){
+              msg = "Verifique os dados inseridos!"
+            }
+            toast.error(msg)
         });
   }
 
-  handleDelete = (nrGrupoRamo) => {
-    api.delete(`produto/grupoRamo/${nrGrupoRamo}`)
+  confirmDelete = () => {
+    api.delete(`produto/grupoRamo/${this.deletarProduto.nrGrupoRamo}`)
       .then(resp => {
           toast.success("Produto removida com sucesso!")
           this.loadList()
       })
       .catch(e => {
-          console.log(e.response)
           toast.error(`Erro ao remover produto! ${e}`)
       });
+      this.setState({open: false})
+  }
+
+  handleDelete = (deletarProduto) => {
+    this.deletarProduto = deletarProduto
+    this.setState({open: true})
   }
 
   handleEdit = async (nrGrupoRamo) => {
@@ -79,7 +93,7 @@ export default class Produto extends Component {
       nmGrupoRamo: '',
       dataIniVigencia: '',
       dataFimVigencia: ''
-    }})
+  }})
 
   handlePaginationChange = (e, { activePage }) => {
     this.setState({paginacao: {...this.state.paginacao, activePage}})
@@ -89,7 +103,7 @@ export default class Produto extends Component {
     let url = "/produto/lista/gruporamo"
     const  {data}  = await api.get(url)
     let produtos = data.dados
-    let totalPages = produtos.length / tamanhoPagina
+    let totalPages = Math.round(produtos.length / tamanhoPagina)
     this.setState({ produtos, filtrados: produtos, paginacao: {...this.state.paginacao, totalPages} })
   }
 
@@ -100,23 +114,37 @@ export default class Produto extends Component {
 
   render() {
     return (
-      <Container>
-        <FormProduto produto={this.state.produto} 
-                     handleChange={this.handleChange}
-                     handleSubmit={this.handleSubmit}
-                     handleCancelar={this.handleCancelar}
-                     editar={this.state.editar} />
-        <Divider />
-        <TableProduto lista={this.state.filtrados}
-                      handleChangeFiltro={this.handleChangeFiltro}
-                      handleChangeCampo={this.handleChangeCampo}
-                      handleDelete={this.handleDelete}
-                      handleEdit={this.handleEdit}
-                      handlePaginationChange={this.handlePaginationChange}
-                      paginacao={this.state.paginacao} />
+      <React.Fragment>
+          <Header as="h1" block textAlign="center" color="yellow">
+            Pagina não oficial
+          </Header>
+        <Container>
+          <FormGrupoRamo produto={this.state.produto} 
+                      handleChange={this.handleChange}
+                      handleSubmit={this.handleSubmit}
+                      handleCancelar={this.handleCancelar}
+                      editar={this.state.editar} />
+          <Divider />
+          <TableGrupoRamo lista={this.state.filtrados}
+                        handleChangeFiltro={this.handleChangeFiltro}
+                        handleChangeCampo={this.handleChangeCampo}
+                        handleDelete={this.handleDelete}
+                        handleEdit={this.handleEdit}
+                        handlePaginationChange={this.handlePaginationChange}
+                        paginacao={this.state.paginacao} />
 
-        <ToastContainer autoClose={2000} />
-      </Container>
+          <ToastContainer autoClose={5000} />
+        </Container>
+        <div>
+          <Confirm
+            open={this.state.open}
+            header="Deletar!"
+            content={`Você confirma a exclusão do Grupo Ramo ${this.deletarProduto.nmGrupoRamo}`}
+            onCancel={() => this.setState({open: false})}
+            onConfirm={this.confirmDelete}
+          />
+        </div>
+      </React.Fragment>
     )
   }
 }
